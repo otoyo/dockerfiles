@@ -9,7 +9,8 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     curl \
     git \
     language-pack-ja \
-    wget \
+    tmux \
+    vim \
     zsh \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
