@@ -6,7 +6,7 @@
 ```
 
 ```sh
-% cd dev
-% docker build -t otoyo/dev .
-% docker run --name CONTAINER_NAME -p HOST_PORT:GUEST_PORT -it otoyo/dev
+% cd elixir
+% docker build -t otoyo/elixir .
+% docker run --name CONTAINER_NAME -p HOST_PORT:GUEST_PORT -it otoyo/elixir
 ```
