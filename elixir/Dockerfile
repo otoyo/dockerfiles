@@ -7,6 +7,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libncurses-dev \
     libssl-dev \
     libxml2-utils \
+    mysql-client \
     openjdk-7-jdk \
     unixodbc-dev \
     xsltproc \
