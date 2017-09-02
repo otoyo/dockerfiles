@@ -11,10 +11,13 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     language-pack-ja \
     lv \
     silversearcher-ag \
+    software-properties-common \
     tmux \
-    vim \
     wget \
     zsh \
+ # Install latest vim
+ && add-apt-repository -y ppa:jonathonf/vim \
+ && apt update -y && DEBIAN_FRONTEND=noninteractive apt install -y vim \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 
