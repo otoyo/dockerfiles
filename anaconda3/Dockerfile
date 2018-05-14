@@ -15,6 +15,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
 # Install Anaconda
 RUN wget https://repo.anaconda.com/archive/Anaconda3-5.1.0-Linux-x86_64.sh \
  && bash Anaconda3-5.1.0-Linux-x86_64.sh -b -p $HOME/anaconda \
+ && rm Anaconda3-5.1.0-Linux-x86_64.sh \
  && echo '' >> .zshrc \
  && echo '# Anaconda' >> .zshrc \
  && echo 'source "$HOME/anaconda/bin/activate"' >> .zshrc
