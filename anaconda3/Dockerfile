@@ -4,6 +4,7 @@ WORKDIR /root
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libbz2-dev \
+    libgl1-mesa-glx \
     libreadline-dev \
     libsqlite3-dev \
     libssl-dev \
