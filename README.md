@@ -16,3 +16,9 @@
 % docker build -t otoyo/elixir .
 % docker run --name CONTAINER_NAME --link mysql:db-mysql -p HOST_PORT:GUEST_PORT -it otoyo/elixir
 ```
+
+## Golang
+
+```sh
+% docker run --name go -p 53000:3000 --security-opt=seccomp:unconfined --privileged -it otoyo/go
+```
